@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4892B5071EA8A0CE008EAA57 /* LYSLoadButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4892B5061EA8A0CE008EAA57 /* LYSLoadButton.m */; };
+		4892B50E1EA8BA02008EAA57 /* MMMaterialDesignSpinner.m in Sources */ = {isa = PBXBuildFile; fileRef = 4892B50D1EA8BA02008EAA57 /* MMMaterialDesignSpinner.m */; };
 		48AAEB901EA761F200C9E7D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 48AAEB8F1EA761F200C9E7D9 /* main.m */; };
 		48AAEB931EA761F200C9E7D9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 48AAEB921EA761F200C9E7D9 /* AppDelegate.m */; };
 		48AAEB961EA761F200C9E7D9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48AAEB951EA761F200C9E7D9 /* ViewController.m */; };
@@ -17,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4892B5051EA8A0CE008EAA57 /* LYSLoadButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYSLoadButton.h; sourceTree = "<group>"; };
+		4892B5061EA8A0CE008EAA57 /* LYSLoadButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYSLoadButton.m; sourceTree = "<group>"; };
+		4892B50C1EA8BA02008EAA57 /* MMMaterialDesignSpinner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMMaterialDesignSpinner.h; sourceTree = "<group>"; };
+		4892B50D1EA8BA02008EAA57 /* MMMaterialDesignSpinner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMMaterialDesignSpinner.m; sourceTree = "<group>"; };
 		48AAEB8B1EA761F200C9E7D9 /* LYSLoadingButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LYSLoadingButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48AAEB8F1EA761F200C9E7D9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		48AAEB911EA761F200C9E7D9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -42,6 +48,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4892B5041EA8A09C008EAA57 /* LYSLoadButton */ = {
+			isa = PBXGroup;
+			children = (
+				4892B50C1EA8BA02008EAA57 /* MMMaterialDesignSpinner.h */,
+				4892B50D1EA8BA02008EAA57 /* MMMaterialDesignSpinner.m */,
+				4892B5051EA8A0CE008EAA57 /* LYSLoadButton.h */,
+				4892B5061EA8A0CE008EAA57 /* LYSLoadButton.m */,
+			);
+			path = LYSLoadButton;
+			sourceTree = "<group>";
+		};
 		48AAEB821EA761F200C9E7D9 = {
 			isa = PBXGroup;
 			children = (
@@ -61,6 +78,7 @@
 		48AAEB8D1EA761F200C9E7D9 /* LYSLoadingButton */ = {
 			isa = PBXGroup;
 			children = (
+				4892B5041EA8A09C008EAA57 /* LYSLoadButton */,
 				48AAEBA51EA7620B00C9E7D9 /* LYSLoadingButton */,
 				48AAEB911EA761F200C9E7D9 /* AppDelegate.h */,
 				48AAEB921EA761F200C9E7D9 /* AppDelegate.m */,
@@ -164,7 +182,9 @@
 			files = (
 				48AAEB961EA761F200C9E7D9 /* ViewController.m in Sources */,
 				48AAEB931EA761F200C9E7D9 /* AppDelegate.m in Sources */,
+				4892B5071EA8A0CE008EAA57 /* LYSLoadButton.m in Sources */,
 				48AAEB901EA761F200C9E7D9 /* main.m in Sources */,
+				4892B50E1EA8BA02008EAA57 /* MMMaterialDesignSpinner.m in Sources */,
 				48AAEBA81EA7621900C9E7D9 /* LYSLoadingButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -316,6 +336,7 @@
 				48AAEBA41EA761F200C9E7D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
