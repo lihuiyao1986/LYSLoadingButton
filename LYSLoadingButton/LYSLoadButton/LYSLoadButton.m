@@ -50,10 +50,31 @@
     [self setBackgroundImage:normalImageBgColor forState:UIControlStateSelected];
 }
 
--(void)setHightImageBgColor:(UIImage *)hightImageBgColor{
-    _hightImageBgColor = hightImageBgColor;
-    [self setBackgroundImage:hightImageBgColor forState:UIControlStateHighlighted];
+-(void)setNormalText:(NSString *)normalText{
+    _normalText = normalText;
+    [self setTitle:normalText forState:UIControlStateNormal];
 }
+
+-(void)setNormalTextColor:(UIColor *)normalTextColor{
+    _normalTextColor = normalTextColor;
+    [self setTitleColor:normalTextColor forState:UIControlStateNormal];
+}
+
+-(void)setHightLightImageBgColor:(UIImage *)hightLightImageBgColor{
+    _hightLightImageBgColor = hightLightImageBgColor;
+    [self setBackgroundImage:hightLightImageBgColor forState:UIControlStateHighlighted];
+}
+
+-(void)setHightLightText:(NSString *)hightLightText{
+    _hightLightText = hightLightText;
+    [self setTitle:hightLightText forState:UIControlStateHighlighted];
+}
+
+-(void)setHightLightTextColor:(UIColor *)hightLightTextColor{
+    _hightLightTextColor = hightLightTextColor;
+    [self setTitleColor:hightLightTextColor forState:UIControlStateHighlighted];
+}
+
 
 #pragma mark - 更新
 -(void)setupUI{

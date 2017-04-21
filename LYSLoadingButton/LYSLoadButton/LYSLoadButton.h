@@ -22,14 +22,17 @@ typedef NS_ENUM(NSUInteger,LYSLoadButtonType){
 @property(nonatomic,assign)CGFloat padding;
 
 @property(nonatomic,copy)NSString *disabledText;
-
 @property(nonatomic,strong)UIImage *disabledBgImage;
-
 @property(nonatomic,copy)UIColor *disabledTextColor;
 
 @property(nonatomic,strong)UIImage *normalImageBgColor;
+@property(nonatomic,strong)UIColor *normalTextColor;
+@property(nonatomic,copy)NSString *normalText;
 
-@property(nonatomic,strong)UIImage *hightImageBgColor;
+
+@property(nonatomic,strong)UIImage *hightLightImageBgColor;
+@property(nonatomic,strong)UIColor *hightLightTextColor;
+@property(nonatomic,copy)NSString *hightLightText;
 
 @property(nonatomic,assign)BOOL addMask;
 

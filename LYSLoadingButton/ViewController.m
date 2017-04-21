@@ -30,15 +30,27 @@
     [_btn addTarget:self action:@selector(btnClicked:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_btn];
     
-    LYSLoadButton *btn1 = [LYSLoadButton buttonWithType:UIButtonTypeRoundedRect];
+    LYSLoadButton *btn1 = [LYSLoadButton buttonWithType:UIButtonTypeCustom];
     btn1.frame = CGRectMake(20, CGRectGetMaxY(_btn.frame) + 20, CGRectGetWidth(self.view.frame) - 40, 44.f);
     btn1.tag = 1000;
+    btn1.layer.cornerRadius = 8.f;
+    btn1.layer.masksToBounds = YES;
+    btn1.addMask = NO;
+    btn1.titleLabel.font = [UIFont systemFontOfSize:16];
+    
+    
     btn1.normalImageBgColor = [self colorToImage:[UIColor redColor]];
-    btn1.hightImageBgColor = [self colorToImage:[UIColor redColor]];
-    btn1.loadingBgImage = [self colorToImage:[UIColor greenColor]];
-    btn1.loadingTextColor = [UIColor grayColor];
-    [btn1 setTitle:@"开始加载2" forState:UIControlStateNormal];
-    [btn1 setTitle:@"开始加载2" forState:UIControlStateHighlighted];
+    btn1.normalText = @"开始加载2";
+    btn1.normalTextColor = [UIColor whiteColor];
+    
+    btn1.hightLightImageBgColor = [self colorToImage:[UIColor redColor]];
+    btn1.hightLightTextColor = [UIColor whiteColor];
+    btn1.hightLightText = @"开始加载2";
+    btn1.disabledBgImage = [self colorToImage:[UIColor blueColor]];
+
+    btn1.loadingBgImage = [self colorToImage:[UIColor redColor]];
+    btn1.loadingTextColor = [UIColor whiteColor];
+    
     [btn1 addTarget:self action:@selector(btnClicked:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn1];
 }
